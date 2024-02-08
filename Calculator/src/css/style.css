@@ -1,0 +1,104 @@
+@font-face {
+  font-family: "sane";
+  src: url("../../assets/fonts/Scientific_Calculator_LCD.ttf");
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#calculator {
+  width: 400px;
+  height: 500px;
+  border: 1px solid darkblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #1c1124f1;
+  border-radius: 10px;
+}
+
+#screen-container {
+  height: 110px;
+  width: 90%;
+  border: 1px solid black;
+  display: grid;
+  grid-template-rows: minmax(0, 45px) minmax(0, 65px);
+  border-radius: 10px;
+  background-color: #6bba6250;
+  border: 1px solid green;
+}
+
+#second-screen,
+#main-screen {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  font-family: "sane", sans-serif;
+}
+
+#main-screen {
+  justify-content: flex-end;
+  font-size: 22px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#second-screen {
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 15px;
+  border-bottom: 1px dotted green;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+#buttons-container {
+  border-radius: 10px;
+  width: 90%;
+  height: 350px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 5px;
+  padding: 5px;
+  background-color: #1c1124;
+}
+
+.autor {
+  grid-column: span 2;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.btn {
+  font-weight: 900;
+}
+
+.clear {
+  background-color: red;
+  color: white;
+}
+
+.delete {
+  background-color: rgb(0, 0, 0, 0.4);
+  color: white;
+}
