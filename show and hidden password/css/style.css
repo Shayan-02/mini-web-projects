@@ -1,0 +1,69 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: 'vazir';
+  direction: rtl;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #20a9f8 to #20a9f8);
+}
+
+h1 {
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+  border-bottom: 5px solid #37eed6;
+}
+
+.password {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 40px;
+  position: relative;
+}
+
+.password input {
+  width: 70%;
+  padding: 10px;
+  box-sizing: border-box;
+  font-family: 'vazir';
+  border: 3px solid #dad052;
+  color: #555;
+  font-size: 18px;
+  font-weight: bold;
+  outline: none;
+}
+
+.toggle {
+  position: absolute;
+  right: 40px;
+}
+
+.fa-eye-slash {
+  display: none;
+}
+
+.toggle svg {
+  color: #505050;
+  opacity: 0.7;
+  cursor: pointer;
+  font-size: 19px;
+}
+
+.toggle svg:hover {
+  opacity: 1;
+}
+
+.hide .fa-eye {
+  display: none;
+}
+
+.hide .fa-eye-slash {
+  display: block;
+}
